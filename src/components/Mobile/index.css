@@ -1,0 +1,65 @@
+.mobile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    width:100vw;
+    
+
+}
+img{
+    width: 264px;
+height: 50px;
+flex-shrink: 0;
+padding-top:100px;
+padding-bottom: 30px;
+}
+
+.heading{
+    color: #000;
+   
+font-family: Work Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.para{
+    color: #666;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+label{
+    padding:10px;
+}
+
+.para2{
+    color: #999;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.button-mobile{
+    width: 224px;
+height: 36px;
+flex-shrink: 0;
+border-radius: 100px;
+background: #F7B348;
+color: #FFF;
+border-style: none;
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+cursor: pointer;
+margin-top: 20px;
+}
