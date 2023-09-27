@@ -28,7 +28,7 @@ const Mobile=()=>{
         else if (value.length===12){
             try{
             setError(false)
-            const api="http://localhost:5000/mobile"
+            const api = "https://admitkart1.onrender.com/mobile";
             const response=await axios.post(api,{mobileNumber})
             const otpDataFromServer=(response.data.otp)
             localStorage.setItem("otp-mobile",JSON.stringify(otpDataFromServer))
