@@ -1,5 +1,9 @@
 AdmitKart1 - Mobile Verification App
 AdmitKart1 is a simple mobile verification app built using React for the frontend and Node.js with SQLite for the backend. It allows users to enter their mobile number, receive an OTP (One-Time Password), and verify their mobile number.
+TO See the Screens ==>
+https://admit-kart1.vercel.app/login.png.png
+https://admit-kart1.vercel.app/otp.png.png
+https://admit-kart1.vercel.app/success.png.png
 
 Table of Contents
 Prerequisites
