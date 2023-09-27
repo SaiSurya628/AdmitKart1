@@ -29,7 +29,7 @@ const otpSubmitFunction=async()=>{
         
         try{
             setError(false)
-            const api="http://localhost:5000/otp"
+            const api = "https://admitkart1.onrender.com/otp";
             const response=await axios.put(api,{mobileNumber,otp})
             console.log(response.data.message)
           
