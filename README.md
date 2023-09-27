@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+AdmitKart1 - Mobile Verification App
+AdmitKart1 is a simple mobile verification app built using React for the frontend and Node.js with SQLite for the backend. It allows users to enter their mobile number, receive an OTP (One-Time Password), and verify their mobile number.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Prerequisites
+Getting Started
+Project Structure
+Usage
+API Endpoints
+Contributing
+Prerequisites
+Before you start, make sure you have the following prerequisites installed on your system:
 
-## Available Scripts
+Node.js (for both frontend and backend)
+npm (Node Package Manager)
+SQLite (for the backend)
+Getting Started
+Follow these steps to get the AdmitKart1 app up and running:
 
-In the project directory, you can run:
+Clone the repository to your local machine:
 
-### `npm start`
+bash
+Copy code
+git clone https://github.com/SaiSurya628/AdmitKart1.git
+Navigate to the project directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+cd AdmitKart1
+Backend Setup
+Navigate to the backend directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+cd Server
+Install the backend dependencies:
 
-### `npm test`
+bash
+Copy code
+npm install
+Initialize the SQLite database:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+npm run init-db
+Start the backend server:
 
-### `npm run build`
+bash
+Copy code
+npm start
+The backend server will run on port 5000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend Setup
+Open a new terminal window and navigate to the frontend directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+cd frontend
+Install the frontend dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm install
+Start the frontend development server:
 
-### `npm run eject`
+bash
+Copy code
+npm start
+The frontend development server will run on port 3000 by default. You can access the app in your web browser at http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Project Structure
+The project is organized into two main directories:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+frontend: Contains the React-based frontend code.
+Server: Contains the Node.js-based backend code.
+Usage
+Open the AdmitKart1 app in your web browser at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+On the landing page, enter your mobile number and click "Sign in with OTP."
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+An OTP will be sent to your mobile number, and you will be redirected to the OTP verification page.
 
-## Learn More
+Enter the OTP received on popup alert in the provided input fields and click "Verify."
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If the OTP is correct, you will be redirected to the success page, indicating that you have successfully logged in.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can log out by clicking the "Log Out" button on the success page.
 
-### Code Splitting
+API Endpoints
+/mobile (POST): Sends an OTP to the provided mobile number for verification.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+/otp (PUT): Verifies the OTP entered by the user against the OTP sent to their mobile number.
 
-### Analyzing the Bundle Size
+Contributing
+If you would like to contribute to this project, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Fork the repository.
 
-### Making a Progressive Web App
+Create a new branch for your feature or bug fix:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+bash
+Copy code
+git checkout -b feature/your-feature-name
+Make your changes and commit them:
 
-### Advanced Configuration
+bash
+Copy code
+git add .
+git commit -m "Add your commit message here"
+Push your changes to your forked repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+bash
+Copy code
+git push origin feature/your-feature-name
+Create a pull request from your forked repository to the original repository.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize this README to include any additional information about your project or specific instructions for users or contributors.
