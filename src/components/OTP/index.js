@@ -126,7 +126,7 @@ const otpSubmitFunction=async()=>{
     <p className="otp-para3">Didn't Receive the code? <button onClick={resendFunction} style={{color:"#F7B348", background:"transparent" , borderStyle:"none"}}> Resend</button></p>
     <button className="button-mobile" onClick={otpSubmitFunction} >Verify</button>
     {error&&<p style={{color:"red"}}>OTP 4 boxes each box should contain single value and Number only</p>}
-    {message&&<p style={{color:"red"}}>{message}</p>}
+    {message&&<p style={{color:"red"}}>Incorrect OTP</p>}
     
 
     </div>)
