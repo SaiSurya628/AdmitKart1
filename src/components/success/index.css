@@ -1,12 +1,10 @@
-/* index.css */
 
-/* Define a container to center the content */
 .success-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh; /* Set the container to fill the viewport height */
+    height: 100vh; 
     text-align: center;
     width: 100vw;
    
@@ -14,14 +12,14 @@
   
  
   .success-logo {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Maintain aspect ratio */
+    width: 300px;
+    height: 300px;
   }
   
-  /* Style the heading and paragraph */
+
   .heading {
-    font-size: 24px; /* Adjust the font size as needed */
-    margin-top: 20px; /* Add spacing between elements */
+    font-size: 24px;
+    margin-top: 20px; 
   }
   
   .para {
@@ -63,24 +61,23 @@ text-align: center;
   
   /* Style the log out button */
   .button-mobile {
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 16px; /* Adjust the font size as needed */
-    background-color: #007bff; /* Example background color */
-    color: #fff; /* Example text color */
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #007bff; 
+    color: #fff; 
     border: none;
     cursor: pointer;
-    margin-top: 20px; /* Add spacing between elements */
+    margin-top: 20px;
   }
   
-  /* Add media queries for responsiveness */
   @media (max-width: 768px) {
     .success-logo {
       width: 125px;
-      height: 125px; /* Adjust the width for smaller screens */
+      height: 125px; 
     }
   
     .heading {
-      font-size: 20px; /* Adjust the font size for smaller screens */
+      font-size: 20px; 
     }
   
     .para {
@@ -121,8 +118,8 @@ text-align: center;
     }
   
     .button-mobile {
-      padding: 8px 16px; /* Adjust padding for smaller screens */
-      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 8px 16px;
+      font-size: 14px; 
     }
   }
   
