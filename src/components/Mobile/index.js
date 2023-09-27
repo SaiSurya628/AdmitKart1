@@ -28,7 +28,7 @@ const Mobile=()=>{
         else if (value.length===12){
             try{
             setError(false)
-            const api="http://localhost:5000/mobile"
+            const api = "https://admitkart1.onrender.com/mobile";
             const response=await axios.post(api,{mobileNumber})
             const otpDataFromServer=(response.data.otp)
             localStorage.setItem("otp-mobile",JSON.stringify(otpDataFromServer))
@@ -58,8 +58,8 @@ const Mobile=()=>{
         <p className="para2">We will send you a one time SMS message charges may apply</p>
 
         <button className="button-mobile" onClick={submitFunction}>Sign in with OTP</button>
-        {error && <p>Error: Please enter a valid number</p>}
-            {message && <p>{message}</p>}
+        {error && <p style={{color:"red"}}>Error: Please enter a valid number</p>}
+            {message && <p style={{color:"red"}}>{message}</p>}
           
     </div>)
 }

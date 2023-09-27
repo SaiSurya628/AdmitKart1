@@ -1,22 +1,128 @@
-.success-logo{
-    width: 305px;
-height: 308px;
-flex-shrink: 0;
-}
-.success-container{
+/* index.css */
+
+/* Define a container to center the content */
+.success-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width:100vw;
-    height:100vh;
-    padding: 30px;
-}
-.heading{
-    color: #333;
+    justify-content: flex-start;
+    height: 100vh; /* Set the container to fill the viewport height */
+    text-align: center;
+    width: 100vw;
+   
+  }
+  
+ 
+  .success-logo {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Maintain aspect ratio */
+  }
+  
+  /* Style the heading and paragraph */
+  .heading {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add spacing between elements */
+  }
+  
+  .para {
+    font-size: 14px; 
     font-family: Work Sans;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal; 
-}
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+color:#999999;
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+  
+  }
+  .success-span{
+      font-family: Work Sans;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+      
+      font-family: Work Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+      
+      color: #666666;
+              
+  }
+  
+  /* Style the log out button */
+  .button-mobile {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    background-color: #007bff; /* Example background color */
+    color: #fff; /* Example text color */
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Add spacing between elements */
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .success-logo {
+      width: 125px;
+      height: 125px; /* Adjust the width for smaller screens */
+    }
+  
+    .heading {
+      font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+  
+    .para {
+      font-size: 14px; 
+      font-family: Work Sans;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+color:#999999;
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+    
+    }
+    .success-span{
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        color: #666666;
+                
+    }
+  
+    .button-mobile {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  
